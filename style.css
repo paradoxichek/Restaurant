@@ -627,6 +627,12 @@ top: -8px;
 .modal_item_active {
   background-color: #ff6a00;
 }
+
+
+
+
+/* Media */
+
 @media (max-width: 1200px) {
   .container {
     padding: 0 30px;
@@ -808,4 +814,4 @@ top: -8px;
   .history_number {
     gap: 30px !important;
   }
-} /*# sourceMappingURL=style.css.map */
+} 

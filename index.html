@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./media.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link
       href="https://fonts.googleapis.com/css?family=Tinos:regular,italic,700,700italic"
       rel="stylesheet"
@@ -88,9 +90,10 @@
 </div>
 
     </div>
-    <div class="header">
+    <div class="header" >
       <div class="container">
-        <div class="header_line">
+        <div class="header_line" data-aos="fade-down"
+        data-aos-duration="1000">
           <div class="header_logo"><img src="./img/LOGO.png" alt="" /></div>
 
           <div class="header_left">
@@ -131,22 +134,24 @@
         </div>
 
         <div class="header_down">
-          <div class="header_title">
+          <div class="header_title" data-aos="fade-right"
+          data-aos-duration="1500">
             Добро пожаловать в
 
             <div class="header_subtitle">Наш ресторан</div>
             <div class="header_subtitle2">ДОМ ЛУЧШЕЙ ЕДЫ</div>
             <div class="header_btn">
-              <button id="modal">ЗАКАЗ СТОЛИКА</button>
+              <button>View Menu</button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="cards">
+    <div class="cards" data-aos="fade-up"
+    data-aos-duration="1300">
       <div class="card_flex container">
-        <div class="card">
+        <div class="card" >
           <div class="card_img">
             <img src="./img/cards.png" alt="" />
           </div>
@@ -182,7 +187,8 @@
     <div class="history">
       <div class="container">
         <div class="history_holder">
-          <div class="history_info">
+          <div class="history_info" data-aos="fade-right"
+          data-aos-duration="1000">
             <div class="history_title">Наша <span>История</span></div>
             <div class="history_desc">
               Как и у любого другого самобытного места, у нас есть своя, особая
@@ -198,7 +204,8 @@
               <div class="item">71 <span>Закуски</span></div>
             </div>
           </div>
-          <div class="history_img">
+          <div class="history_img" data-aos="fade-left"
+          data-aos-duration="1000">
             <img class="images-1 none" src="./img/1.png" alt="" />
             <img class="images-2 none" src="./img/2.png" alt="" />
             <img class="images-3 none" src="./img/3.png" alt="" />
@@ -211,7 +218,8 @@
     <div class="black_block">
       <div class="container">
         <div class="block_holder">
-          <div class="left">
+          <div class="left" data-aos="fade-right"
+          data-aos-duration="1000">
             <div class="left_title">
               Отпразднуйте в одном из <br />
               самых лучших ресторанов.
@@ -221,8 +229,9 @@
             </div>
           </div>
 
-          <div class="right">
-            <button id="modal">ЗАКАЗ СТОЛИКА</button>
+          <div class="right" data-aos="fade-left"
+          data-aos-duration="1000">
+            <button id="">ЗАКАЗ СТОЛИКА</button>
           </div>
         </div>
       </div>
@@ -236,19 +245,22 @@
           <div class="burgers_img"></div>
 
           <div class="burgers_items">
-            <div class="burger_item">
+            <div class="burger_item"data-aos="flip-up"
+            data-aos-duration="1000">
               <img src="./img/burger.png" alt="" class="burger_adap" />
               <div class="burger_text">
                 Гамбургер мини -<span>----------------</span> 220 ₽
               </div>
             </div>
-            <div class="burger_item">
+            <div class="burger_item"  data-aos="flip-up"
+            data-aos-duration="1200" >
               <img src="./img/burger.png" alt="" class="burger_adap" />
               <div class="burger_text">
                 Гамбургер мини -<span>----------------</span> 220 ₽
               </div>
             </div>
-            <div class="burger_item">
+            <div class="burger_item"data-aos="flip-up"
+            data-aos-duration="1500" >
               <img src="./img/burger.png" alt="" class="burger_adap" />
               <div class="burger_text">
                 Гамбургер мини -<span>----------------</span> 220 ₽
@@ -263,7 +275,8 @@
       <div class="container">
         <div class="menu_title">Наше меню</div>
         <div class="menu_items">
-          <div class="menu_item">
+          <div class="menu_item" data-aos="flip-right"
+            data-aos-duration="1200" >
             <div class="menu_img">
               <img src="./img/burgermax.png" alt="" />
             </div>
@@ -274,7 +287,8 @@
             </div>
             <div class="menu_button"><button>ЗАКАЗАТЬ</button></div>
           </div>
-          <div class="menu_item">
+          <div class="menu_item" data-aos="flip-right"
+            data-aos-duration="1200" >
             <div class="menu_img">
               <img src="./img/burgermax.png" alt="" />
             </div>
@@ -285,7 +299,8 @@
             </div>
             <div class="menu_button"><button>ЗАКАЗАТЬ</button></div>
           </div>
-          <div class="menu_item">
+          <div class="menu_item" data-aos="flip-right"
+            data-aos-duration="1200" >
             <div class="menu_img">
               <img src="./img/burgermax.png" alt="" />
             </div>
@@ -358,6 +373,9 @@
     </div>
 
     <div class="footer">Copyright 2024</div>
-    <script src="./script.js"></script>
+    <script src="./script.js"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> 
   </body>
 </html>
